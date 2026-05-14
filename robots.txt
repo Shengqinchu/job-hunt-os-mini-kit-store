@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shengqinchu.github.io/job-hunt-os-mini-kit-store/sitemap.xml
