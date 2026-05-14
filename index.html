@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Hunt OS Mini Kit</title>
+  <meta name="description" content="求职OS迷你套件：Excel 申请跟踪表、7天求职冲刺计划和 AI 提示词包。">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #667085;
+      --line: #d8dee8;
+      --accent: #0f766e;
+      --accent-dark: #0b5d56;
+      --gold: #b7791f;
+      --bg: #edf2f7;
+      --panel: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 28px;
+      align-items: center;
+      min-height: 72vh;
+    }
+    .eyebrow {
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 800;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(36px, 6vw, 72px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 680px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      margin-top: 28px;
+    }
+    .buy {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 22px;
+      border-radius: 8px;
+      color: white;
+      background: var(--accent);
+      text-decoration: none;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(15, 118, 110, 0.24);
+    }
+    .buy:hover { background: var(--accent-dark); }
+    .price {
+      color: var(--gold);
+      font-weight: 800;
+    }
+    .preview {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 18px;
+      box-shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+    }
+    .preview img {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #f7f9fc;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 10px;
+    }
+    article {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 18px;
+    }
+    h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .screens {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .screens img {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+    }
+    @media (max-width: 840px) {
+      header { grid-template-columns: 1fr; min-height: auto; }
+      .grid, .screens { grid-template-columns: 1fr; }
+      h1 { font-size: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <section>
+        <div class="eyebrow">Excel + AI prompts for job search execution</div>
+        <h1>Job Hunt OS Mini Kit</h1>
+        <p class="lead">求职OS迷你套件，包含申请跟踪 Excel、7 天求职冲刺计划、面试准备页和 AI 提示词包。适合求职、转码、实习申请和跳槽准备。</p>
+        <div class="actions">
+          <a class="buy" href="https://glass-faced-integral-media.trycloudflare.com/buy">立即购买 ¥70</a>
+          <span class="price">虎皮椒收款，支付后自动交付 ZIP</span>
+        </div>
+      </section>
+      <aside class="preview">
+        <img src="assets/cover.png" alt="Job Hunt OS Mini Kit cover preview">
+      </aside>
+    </header>
+
+    <section class="grid" aria-label="Product contents">
+      <article>
+        <h2>申请跟踪表</h2>
+        <p>集中管理岗位、优先级、投递状态、跟进日期和面试阶段。</p>
+      </article>
+      <article>
+        <h2>7 天冲刺计划</h2>
+        <p>把求职动作拆成每天可以执行的任务，减少拖延和遗漏。</p>
+      </article>
+      <article>
+        <h2>AI 提示词包</h2>
+        <p>覆盖简历优化、岗位匹配、冷邮件、面试复盘和谈薪准备。</p>
+      </article>
+    </section>
+
+    <section class="screens" aria-label="Workbook previews">
+      <img src="assets/dashboard_preview.png" alt="Dashboard preview">
+      <img src="assets/applications_preview.png" alt="Applications tracker preview">
+    </section>
+  </main>
+</body>
+</html>
